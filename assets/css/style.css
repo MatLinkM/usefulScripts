@@ -9,17 +9,19 @@ html, body {
     box-sizing: border-box;
 }
 
-/*.tag {
+.tag {
     height: 60px;
-    width: 170px;
+    width: 36%;
     padding: 20px;
     margin: 0;
     float: left;
 }
 
 .tag span {
-    color: white;
-}*/
+    color: purple;
+    font-family: monospace;
+    font-size: 16px;
+}
 
 .nav {
     width: 100%;
@@ -28,12 +30,17 @@ html, body {
     position: fixed;
 }
 
+.navbar {
+    width: 64%;
+    height: auto;
+    float: right;
+}
+
 .nav ul {
     width: 100%;
     margin: 0;
     padding: 0;
-    text-align: center;
-    float: right;
+    text-align: left;
     line-height: 50px;
 }
 
@@ -41,6 +48,7 @@ html, body {
     display: inline-block;
     width: 60px;
     height: 60px;
+    text-align: center;
 }
 
 .nav a {

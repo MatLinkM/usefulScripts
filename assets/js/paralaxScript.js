@@ -1,6 +1,10 @@
 $('.nav a').click(function(e) {
     e.preventDefault();
     var id = $(this).attr('href');
+        target = $(id).offset().top;
+        heightNav = $('.nav').innerHeight();
 
-    console.log(id);
-});
+    $('html, body').animate({
+        scrollTop: target - heightNav
+    }, 1000)
+})
